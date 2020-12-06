@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body onload='document.form1.text1.focus()'>
+  <section class="wrapper">
+    <section class="content">
+    <h1 class="title">
+      Learn to code by watching others
+    </h1> 
+    <h2 class="info">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+    </h2> 
+    </section>
+    <section class="form-content"> 
+  <div class="subscription-wrapper">
+    <h2 class="subscription">
+     <span class="highlighted"> Try it free 7 days</span> then $20/mo. thereafter
+    </h2>
+  </div>
+  <form name="form1" action="#" class="signup">
+    <div class="field">
+      <label for="first-name">
+        <input type="text" required id="first-name" placeholder="First Name" 
+        oninvalid="this.setCustomValidity('First Name cannot be empty')">  
+      </label>
+    </div>
+    <div class="field">
+      <label for="last-name">
+        <input type="text" required id="last-name" placeholder="Last Name"
+        oninvalid="this.setCustomValidity('Last Name cannot be empty')">
+      </label> 
+    </div>
+    <div class="field">
+      <label for="email">
+        <input type="text" required id="email" name='text1' placeholder="Email Address" >  
+      </label></div>
+    <div class="field">
+      <label for="password">
+        <input type="text" required id="password" placeholder="Password"
+        oninvalid="this.setCustomValidity('Password cannot be empty')">
+        >  
+      </label>
+    </div>
+    <div class="field">
+      <input type="submit" class="submit" value="Claim your free trial" onclick="ValidateEmail(document.form1.text1)">
+    </div>
+    <div class="conditions">
+      <p> By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
+    </div>
+</form>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kenard Ellis</a>.
+    </p>
+  </footer>
+    </section>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
